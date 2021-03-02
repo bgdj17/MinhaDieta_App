@@ -6,6 +6,18 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		tools:context=".MainActivity">
+	<TextView
+			android:id="@+id/textViewMain1"
+			android:text="Vamos começar?"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			tools:layout_editor_absoluteY="43dp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:textColor="@color/black"
+			android:textSize="22sp"
+			android:fontFamily="serif"
+			tools:ignore="MissingConstraints"/>
 	<androidx.recyclerview.widget.RecyclerView
 			android:id="@+id/recycler_view1"
 			android:padding="4dp"
@@ -13,6 +25,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			tools:listitem="@layout/item"
+
 
 	/>
 </RelativeLayout>

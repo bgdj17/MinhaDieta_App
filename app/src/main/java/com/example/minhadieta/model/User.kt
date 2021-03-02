@@ -1,6 +1,10 @@
 package com.example.minhadieta.model
 
-data class User(val ID: Int , val nameUser: String, val heightUser : Double, val wheightUser: Double){
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class User(val ID: Int , val nameUser: String, val heightUser : Double, val wheightUser: Double): Parcelable{
 
     fun getImc(): Double {
         var imc = wheightUser / (heightUser * heightUser)
