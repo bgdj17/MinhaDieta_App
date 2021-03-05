@@ -35,18 +35,16 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     fun redirect(user: User) {
-
         val keyUser = "USER"
 
         val destiny = Intent(this, MainActivity::class.java)
         destiny.putExtra(keyUser, user)
-
         startActivity(destiny)
     }
 
     private fun handleSave() {
         name = editNameUser.text.toString()
-        heightUser = editHeigthUser.text.toString()
+        heightUser = editHeightUser.text.toString()
         wheigth = editWheithUser.text.toString()
 
         var count = 0

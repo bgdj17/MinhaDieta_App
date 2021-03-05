@@ -5,79 +5,96 @@
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-
 		tools:context=".SplashActivity">
 
+	<androidx.constraintlayout.widget.Guideline
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/guideline2"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_percent="0.4"
+			app:layout_constraintGuide_end="525dp"/>
+	<ImageView
+			android:layout_width="150dp"
+			android:layout_height="130dp"
+			android:src="@drawable/diet"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintHorizontal_bias="0.532"
+			android:id="@+id/imageView2"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintBottom_toTopOf="@+id/guideline2"/>
+	<TextView
+			android:id="@+id/textViewWelcome"
+			android:text="Bem vindo(a)!"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="10dp"
+
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			android:fontFamily="serif"
+
+			app:layout_constraintTop_toTopOf="@+id/guideline2" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"/>
 
 	<TextView
 			android:id="@+id/textView"
-			android:text="Vamos começar?"
+			android:text="Gerencie sua saúde de forma prática."
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			tools:layout_editor_absoluteY="43dp"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintEnd_toEndOf="parent"
 			android:textColor="@color/black"
-			android:textSize="22sp"
+			android:textSize="16sp"
 			android:fontFamily="serif"
-			tools:ignore="MissingConstraints"/>
-	<ImageView
-			android:layout_width="150dp"
-			android:layout_height="150dp"
-			android:src="@drawable/diet"
-			app:layout_constraintTop_toBottomOf="@+id/textView"
-			app:layout_constraintBottom_toTopOf="@+id/editNameUser" app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintStart_toStartOf="parent"/>
+			app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"/>
 
 	<EditText
 			android:id="@+id/editNameUser"
 			android:layout_width="300dp"
 			android:layout_height="70dp"
-			app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintStart_toStartOf="parent"
 			android:hint="Qual o seu nome?"
-			android:textSize="18sp"
+			android:inputType="text"
+			android:textSize="12sp"
 			android:textColor="@color/black"
-			android:textAlignment="center"
-			app:layout_constraintBottom_toTopOf="@+id/buttonEnter" app:layout_constraintTop_toBottomOf="@+id/textView"/>
-
-	<EditText
-			android:id="@+id/editHeigthUser"
-			android:layout_width="300dp"
-			android:layout_height="70dp"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintStart_toStartOf="parent"
-			android:hint="Qual o sua altura?"
-			android:inputType="numberDecimal"
-			android:textSize="18sp"
-			android:textColor="@color/black"
-			android:textAlignment="center"
-			app:layout_constraintBottom_toTopOf="@+id/buttonEnter"
-			app:layout_constraintTop_toBottomOf="@+id/editNameUser"/>
+			app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
 
 	<EditText
 			android:id="@+id/editWheithUser"
 			android:layout_width="300dp"
 			android:layout_height="70dp"
-			app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintStart_toStartOf="parent"
 			android:hint="Qual o seu peso?"
 			android:inputType="numberDecimal"
-			android:textSize="18sp"
-			android:textColor="@color/black"
-			android:textAlignment="center"
-			app:layout_constraintBottom_toTopOf="@+id/editHeigthUser"
-			app:layout_constraintTop_toBottomOf="@+id/editNameUser"/>
+			android:textSize="12sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/editNameUser" app:layout_constraintStart_toStartOf="parent"/>
+
+	<EditText
+			android:id="@+id/editHeightUser"
+			android:layout_width="300dp"
+			android:layout_height="70dp"
+			android:hint="Qual a sua altura?"
+			android:inputType="numberDecimal"
+			android:textSize="12sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/editWheithUser"/>
 
 	<Button
 			android:layout_width="150dp"
 			android:layout_height="50dp"
-			app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintStart_toStartOf="parent"
 			android:text="Entrar"
 			android:textColor="@color/white"
 			android:background="@color/colorPrimary"
-			android:layout_marginBottom="25dp"
+			android:layout_marginBottom="15dp"
 			android:id="@+id/buttonEnter"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

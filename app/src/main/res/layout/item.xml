@@ -5,20 +5,23 @@
 		android:layout_width="match_parent"
 		android:layout_height="80dp"
 		xmlns:tools="http://schemas.android.com/tools"
-		android:background="#F5F5F5"
+		android:layout_margin="12dp"
 		tools:showIn="@layout/activity_main"
 >
 	<RelativeLayout
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:padding="8dp"
-	>
+			tools:ignore="ExtraText">
+
 
 		<ImageView
 				android:id="@+id/imageViewItem"
 				android:layout_width="50dp"
 				android:layout_height="50dp"
+				android:background="@color/white"
 				android:src="@drawable/ic_baseline_local_drink_24"
+
 		/>
 		<TextView
 				android:id="@+id/textViewItemName"

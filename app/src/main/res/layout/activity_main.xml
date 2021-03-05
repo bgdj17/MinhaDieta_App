@@ -12,7 +12,7 @@
 			android:layout_height="130dp"
 			android:background="@color/colorPrimary"
 			android:text="Informações Usuario"
-			android:textColor="@color/black"
+			android:textColor="@color/colorAccent"
 			android:padding="20dp"
 			app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
 
